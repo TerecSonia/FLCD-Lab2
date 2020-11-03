@@ -1,0 +1,14 @@
+NAME
+x : INTEGER;
+y : INTEGER;
+BEGIN
+	IN(x);
+	IN(y);
+	WHILE x <> y MAKE
+		WHETHER x > y NEXT x := x-y
+				ELSE y := y-x;
+	OUT(`gcd`,x);
+4.5
+END
+
+
